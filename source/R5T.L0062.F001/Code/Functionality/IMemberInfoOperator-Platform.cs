@@ -102,11 +102,18 @@ namespace R5T.L0062.F001.Platform
                 // Use the parameter type code for the return type.
                 var returnTypeName = Instances.TypeOperator.Get_NamespacedTypeName_ForParameterType(returnType);
 
-                // Weirdness for conversion operators and 
+                // Weirdness for conversion operators and generic type parameters.
                 if (returnType.IsGenericTypeParameter)
                 {
                     returnTypeName = Instances.TypeOperator.Handle_ConversionOperatorGenericTypeName(
                         returnType,
+                        returnTypeName);
+                }
+
+                if(returnType.HasElementType && returnType.GetElementType().IsGenericTypeParameter)
+                {
+                    returnTypeName = Instances.TypeOperator.Handle_ConversionOperatorGenericTypeName(
+                        returnType.GetElementType(),
                         returnTypeName);
                 }
 
