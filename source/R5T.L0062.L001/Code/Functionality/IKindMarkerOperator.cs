@@ -69,5 +69,14 @@ namespace R5T.L0062.L001
 
             return output;
         }
+
+        public string Remove_TypeKindMarker(string signatureString)
+        {
+            var output = Instances.StringOperator.Get_Substring_From_Exclusive(
+                Instances.TokenSeparators.KindMarkerTokenSeparator,
+                signatureString);
+
+            return output;
+        }
     }
 }
