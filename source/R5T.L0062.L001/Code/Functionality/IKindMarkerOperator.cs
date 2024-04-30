@@ -61,6 +61,9 @@ namespace R5T.L0062.L001
             return output;
         }
 
+        /// <summary>
+        /// Prefixes the identity string with the type kind-marker value.
+        /// </summary>
         public string Make_TypeKindMarked(string identityStringValue)
         {
             var output = this.Make_KindMarked(
