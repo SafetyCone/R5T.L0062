@@ -18,7 +18,7 @@ namespace R5T.L0062.F001
 
 
         /// <summary>
-        /// Returns the namespaced type name, with a slight difference regarding the handling of nested type names relative to <see cref="L0053.ITypeOperator.Get_NamespacedTypeName(Type)"/>.
+        /// Returns the namespaced type name, with a slight difference regarding the handling of nested type names relative to <see cref="L0066.ITypeOperator.Get_NamespacedTypeName(Type)"/>.
         /// The standard nested type name token separator (used by <see cref="Type.FullName"/>) is '+' (plus),
         /// but identity strings use the same '.' (period) as used for the namespace token separator.
         /// </summary>

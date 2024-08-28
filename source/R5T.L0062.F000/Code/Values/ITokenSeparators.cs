@@ -15,7 +15,7 @@ namespace R5T.L0062.F000
 
 
         /// <summary>
-        /// <para><inheritdoc cref="L0053.ITokenSeparators.NestedTypeNameTokenSeparator" path="/summary/descendant::name"/></para>
+        /// <para><inheritdoc cref="L0066.ITokenSeparators.NestedTypeNameTokenSeparator" path="/summary/descendant::name"/></para>
         /// The standard nested type name token separator (used by <see cref="Type.FullName"/>) is '+' (plus).
         /// But for identity strings, the nested type name token separator is '.' (period), which is the same as the namespace token separator.
         /// </summary>
