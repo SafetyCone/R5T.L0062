@@ -5,6 +5,16 @@ using R5T.T0131;
 
 namespace R5T.L0062.L001
 {
+    /// <summary>
+    /// Kind marker values (for .NET identity strings).
+    /// </summary>
+    /// <remarks>
+    /// For documentation see:
+    /// <list type="bullet">
+    /// <item><inheritdoc cref="Y0006.Documentation.For_IDStrings.MSDocs_APIDocumentationLink" path="descendant::link"/></item>
+    /// <item><inheritdoc cref="Y0006.Documentation.For_IDStrings.MSDocs_DocumentationCommentsLink" path="descendant::link"/></item>
+    /// </list>
+    /// </remarks>
     [ValuesMarker]
     public partial interface IKindMarkers : IValuesMarker
     {
@@ -63,5 +73,31 @@ namespace R5T.L0062.L001
 
         /// <inheritdoc cref="Type_Constant"/>
         public char Type => Type_Constant;
+
+
+#pragma warning disable IDE1006 // Naming Styles
+
+        /// <inheritdoc cref="Error_Constant"/>
+        public char _ExclamationPoint => Error_Constant;
+
+        /// <inheritdoc cref="Event_Constant"/>
+        public char _E => Event_Constant;
+
+        /// <inheritdoc cref="Field_Constant"/>
+        public char _F => Field_Constant;
+
+        /// <inheritdoc cref="Method_Constant"/>
+        public char _M => Method_Constant;
+
+        /// <inheritdoc cref="Namespace_Constant"/>
+        public char _N => Namespace_Constant;
+
+        /// <inheritdoc cref="Property_Constant"/>
+        public char _P => Property_Constant;
+
+        /// <inheritdoc cref="Type_Constant"/>
+        public char _T => Type_Constant;
+
+#pragma warning restore IDE1006 // Naming Styles
     }
 }

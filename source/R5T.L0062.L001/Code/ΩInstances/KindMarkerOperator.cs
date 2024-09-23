@@ -17,3 +17,21 @@ namespace R5T.L0062.L001
         #endregion
     }
 }
+
+
+namespace R5T.L0062.L001.Internal
+{
+    public class KindMarkerOperator : IKindMarkerOperator
+    {
+        #region Infrastructure
+
+        public static IKindMarkerOperator Instance { get; } = new KindMarkerOperator();
+
+
+        private KindMarkerOperator()
+        {
+        }
+
+        #endregion
+    }
+}
