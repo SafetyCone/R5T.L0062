@@ -2,6 +2,7 @@ using System;
 using System.Linq;
 
 using R5T.T0132;
+using R5T.T0143;
 
 
 namespace R5T.L0062.L001
@@ -10,7 +11,10 @@ namespace R5T.L0062.L001
     public partial interface IKindMarkerOperator : IFunctionalityMarker
     {
 #pragma warning disable IDE1006 // Naming Styles
+
+        [Ignore]
         public Internal.IKindMarkerOperator _Internal => Internal.KindMarkerOperator.Instance;
+
 #pragma warning restore IDE1006 // Naming Styles
 
 
